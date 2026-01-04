@@ -12,8 +12,7 @@
     <img src="https://img.shields.io/badge/🔥-@minjs-black"/>
     <img src="https://img.shields.io/badge/zero-dependencies-black" alt="Test Coverage" />
     <br>
-    <img src="https://github.com/minejs/signals/actions/workflows/ci.yml/badge.svg" alt="CI" />
-    <img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Test Coverage" />
+    <img src="https://img.shields.io/badge/coverage-99.14%25-brightgreen" alt="Test Coverage" />
     <img src="https://img.shields.io/github/issues/minejs/signals?style=flat" alt="Github Repo Issues" />
     <img src="https://img.shields.io/github/stars/minejs/signals?style=social" alt="GitHub Repo stars" />
 </div>

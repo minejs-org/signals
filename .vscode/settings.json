@@ -14,8 +14,7 @@
         "node_modules": true,
         ".vscode": true,
         "tsconfig.json": true,
-        "tsup.config.ts": true,
-        ".github": true
+        "tsup.config.ts": true
     },
     "hide-files.files": [
         "eslint.config.mjs",
@@ -27,7 +26,6 @@
         "node_modules",
         ".vscode",
         "tsconfig.json",
-        "tsup.config.ts",
-        ".github"
+        "tsup.config.ts"
     ]
 }
