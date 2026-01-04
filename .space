@@ -1,0 +1,23 @@
+{
+	"type"              : "lib",
+	"template"          : "clean",
+	"pm"                : "bun",
+	"repo"              : {
+		"org"           : "minejs",
+		"name"          : "signals",
+		"version"       : "0.0.1",
+		"desc"          : "A lightweight, zero-dependency signals library for reactive JavaScript applications",
+		"kw"            : ["minejs", "signals"],
+		"license"       : "MIT",
+		"issues"        : "https://github.com/minejs-org/signals/issues",
+		"homepage"      : "https://github.com/minejs-org/signals#readme",
+		"git_url"       : "git+https://github.com/minejs-org/signals.git"
+	},
+	"author"            : {
+		"id"            : "maysara-elshewehy",
+		"name"          : "Maysara",
+		"email"         : "maysara.elshewehy@gmail.com",
+		"url"           : "https://github.com/maysara-elshewehy"
+	},
+	"createdAt"         : "2026-01-03T00:17:21.666Z"
+}
