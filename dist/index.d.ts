@@ -1,63 +1,49 @@
-// src/types.d.ts
-//
-// Made with ❤️ by Maysara.
-
-
-
-// ╔════════════════════════════════════════ TYPE ════════════════════════════════════════╗
-
+/**
+ * Represents a reactive signal that holds a value and notifies dependents when changed.
+ * @template T - The type of value stored in the signal
+ */
+interface Signal<T> {
     /**
-     * Represents a reactive signal that holds a value and notifies dependents when changed.
-     * @template T - The type of value stored in the signal
+     * Reads the current signal value and establishes a dependency if inside an effect.
+     * @returns {T} The current value
      */
-    interface Signal<T> {
-        /**
-         * Reads the current signal value and establishes a dependency if inside an effect.
-         * @returns {T} The current value
-         */
-        (): T;
-
-        /**
-         * Sets the signal to a new value and notifies all subscribers.
-         * @param {T} value - The new value to set
-         */
-
-        set(value: T): void;
-        /**
-         * Updates the signal by applying a function to its current value.
-         * @param {(prev: T) => T} fn - Function that receives current value and returns new value
-         */
-
-        update(fn: (prev: T) => T): void;
-        /**
-         * Reads the signal value without creating a dependency relationship.
-         * @returns {T} The current value
-         */
-
-        peek(): T;
-        /**
-         * Subscribes to signal changes.
-         * @param {() => void} fn - Callback function to execute when signal changes
-         * @returns {() => void} Unsubscribe function
-         */
-        subscribe(fn: () => void): () => void;
-    }
-
+    (): T;
     /**
-     * Represents a computed (memoized) signal derived from other signals.
-     * Automatically updates when dependencies change and is read-only.
-     * @template T - The type of value computed
+     * Sets the signal to a new value and notifies all subscribers.
+     * @param {T} value - The new value to set
      */
-    interface Computed<T> extends Signal<T> {
-        /** Marks this signal as computed for type checking purposes */
-        readonly isComputed: true;
-    }
-
+    set(value: T): void;
     /**
-     * The return type of an effect function.
-     * Can be void or a cleanup function that runs when the effect is disposed.
+     * Updates the signal by applying a function to its current value.
+     * @param {(prev: T) => T} fn - Function that receives current value and returns new value
      */
-    type EffectCleanup = void | (() => void);
+    update(fn: (prev: T) => T): void;
+    /**
+     * Reads the signal value without creating a dependency relationship.
+     * @returns {T} The current value
+     */
+    peek(): T;
+    /**
+     * Subscribes to signal changes.
+     * @param {() => void} fn - Callback function to execute when signal changes
+     * @returns {() => void} Unsubscribe function
+     */
+    subscribe(fn: () => void): () => void;
+}
+/**
+ * Represents a computed (memoized) signal derived from other signals.
+ * Automatically updates when dependencies change and is read-only.
+ * @template T - The type of value computed
+ */
+interface Computed<T> extends Signal<T> {
+    /** Marks this signal as computed for type checking purposes */
+    readonly isComputed: true;
+}
+/**
+ * The return type of an effect function.
+ * Can be void or a cleanup function that runs when the effect is disposed.
+ */
+type EffectCleanup = void | (() => void);
 
 /**
  * Creates a reactive signal that can be read, written, and subscribed to.

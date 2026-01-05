@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// src/main.ts
+// src/index.ts
 //
 // Made with ❤️ by Maysara.
 

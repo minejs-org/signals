@@ -5,7 +5,7 @@
 	"repo"              : {
 		"org"           : "minejs",
 		"name"          : "signals",
-		"version"       : "0.0.3",
+		"version"       : "0.0.4",
 		"desc"          : "A lightweight, zero-dependency signals library for reactive JavaScript applications",
 		"kw"            : ["minejs", "signals"],
 		"license"       : "MIT",

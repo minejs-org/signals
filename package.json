@@ -1,6 +1,6 @@
 {
 	"name"                             : "@minejs/signals",
-	"version"                          : "0.0.3",
+	"version"                          : "0.0.4",
 	"description"                      : "A lightweight, zero-dependency signals library for reactive JavaScript applications",
 	"keywords"                         : ["minejs", "signals"],
 	"license"                          : "MIT",
@@ -18,14 +18,14 @@
 		"url"                          : "git+https://github.com/minejs-org/signals.git"
 	},
 	"type"                             : "module",
-	"main"                             : "./dist/main.js",
-	"types"                            : "./dist/main.d.ts",
+	"main"                             : "./dist/index.js",
+	"types"                            : "./dist/index.d.ts",
 	"files"                            : ["dist"],
 	"exports"                          : {
 		"."                            : {
-			"types"                    : "./dist/main.d.ts",
-			"import"                   : "./dist/main.js",
-			"require"                  : "./dist/main.js"
+			"types"                    : "./dist/index.d.ts",
+			"import"                   : "./dist/index.js",
+			"require"                  : "./dist/index.js"
 		}
 	},
 	"scripts"                          : {
