@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.5-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.6-black"/>
     <img src="https://img.shields.io/badge/🔥-@minejs-black"/>
     <img src="https://img.shields.io/badge/zero-dependencies-black" alt="Test Coverage" />
     <br>
@@ -30,7 +30,7 @@
 
     - ### Setup
 
-        > install [`hmm`](https://github.com/minejs/hmm) first.
+        > install [`hmm`](https://github.com/minejs-org/hmm) first.
 
         ```bash
         hmm i @minejs/signals
