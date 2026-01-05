@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.4-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.5-black"/>
     <img src="https://img.shields.io/badge/🔥-@minejs-black"/>
     <img src="https://img.shields.io/badge/zero-dependencies-black" alt="Test Coverage" />
     <br>
@@ -30,10 +30,10 @@
 
     - ### Setup
 
-        > install [`space`](https://github.com/solution-lib/space) first.
+        > install [`hmm`](https://github.com/minejs/hmm) first.
 
         ```bash
-        space i @minejs/signals
+        hmm i @minejs/signals
         ```
 
     <div align="center"> <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/> <br> </div>

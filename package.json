@@ -1,6 +1,6 @@
 {
 	"name"                             : "@minejs/signals",
-	"version"                          : "0.0.4",
+	"version"                          : "0.0.5",
 	"description"                      : "A lightweight, zero-dependency signals library for reactive JavaScript applications",
 	"keywords"                         : ["minejs", "signals"],
 	"license"                          : "MIT",
